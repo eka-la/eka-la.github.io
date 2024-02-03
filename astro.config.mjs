@@ -1,12 +1,13 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
+import markdoc from "@astrojs/markdoc";
 
 // https://astro.build/config
 export default defineConfig({
   site: "https://eka-la.github.io",
   integrations: [
     starlight({
-      title: "My Docs",
+      title: "WIP",
       social: {
         github: "https://github.com/eka-la/eka-la.github.io",
       },
@@ -62,5 +63,6 @@ export default defineConfig({
         },
       ],
     }),
+    markdoc(),
   ],
 });
