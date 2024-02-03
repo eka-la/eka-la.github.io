@@ -1,9 +1,18 @@
 let
   inherit (inputs) nixpkgs;
+  inherit (inputs.std.dmerge) append;
   inherit (inputs.std.data) configs;
   inherit (inputs.std.lib.dev) mkNixago;
 in {
-  treefmt = (mkNixago configs.treefmt) {};
+  treefmt = (mkNixago configs.treefmt) {
+    data.formatter.prettier = {
+      excludes = [
+        "./package.json"
+        "./pnpm-lock.yaml"
+      ];
+      includes = append ["*.mjs"];
+    };
+  };
   editorconfig = (mkNixago configs.editorconfig) {};
   conform = (mkNixago configs.conform) {};
   lefthook = (mkNixago configs.lefthook) {};
