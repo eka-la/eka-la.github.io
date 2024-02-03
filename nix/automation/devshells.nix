@@ -12,6 +12,10 @@ in {
       {package = pkgs.nodePackages_latest.node2nix;}
       {package = pkgs.nodePackages_latest.svgo;}
       {package = pkgs.nodePackages_latest.pnpm;}
+      {
+        package = pkgs.crowdin-cli;
+        name = "crowdin";
+      }
       {package = pkgs.pngcrush;}
       {package = pkgs.libwebp;}
       {package = pkgs.netlify-cli;}

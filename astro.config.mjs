@@ -21,6 +21,28 @@ export default defineConfig({
         // Relative path to custom CSS file
         "./src/styles/custom.css",
       ],
+      defaultLocale: "root",
+      locales: {
+        // English documents in `src/content/docs/en/`
+        root: {
+          label: "English",
+          lang: "en",
+        },
+        // Simplified chinesise documents in `src/content/docs/zh/`
+        zh: {
+          label: "简体中文",
+          lang: "zh-CN",
+        },
+        // Arabiic documents in `src/content/docs/ar/`
+        ar: {
+          label: "العربية",
+          dir: "rtl",
+        },
+        // Spanish documents in `src/content/docs/es/`
+        es: {
+          label: "Español",
+        },
+      },
       sidebar: [
         {
           label: "Guides",
