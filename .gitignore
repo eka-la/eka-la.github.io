@@ -23,3 +23,10 @@ netlify
 
 # Nix
 .data
+.cache
+
+# nixago: ignore-linked-files
+/cog.toml
+/lefthook.yml
+/.conform.yaml
+/treefmt.toml
