@@ -33,7 +33,7 @@
     "devshell": {
       "inputs": {
         "flake-utils": "flake-utils",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs_2"
       },
       "locked": {
         "lastModified": 1705332421,
@@ -234,7 +234,7 @@
       "inputs": {
         "flake-utils": "flake-utils_2",
         "nixago-exts": "nixago-exts",
-        "nixpkgs": "nixpkgs_2"
+        "nixpkgs": "nixpkgs_3"
       },
       "locked": {
         "lastModified": 1687381756,
@@ -354,6 +354,22 @@
     },
     "nixpkgs": {
       "locked": {
+        "lastModified": 1706956340,
+        "narHash": "sha256-g1hZv4OnW2UR6+OBWbeYB2kNnbq0W81wzZhOk/3yoXk=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "7b9bd55d0f67ee214a8c9f3353ded09618ab51b2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "release-23.11",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
         "lastModified": 1704161960,
         "narHash": "sha256-QGua89Pmq+FBAro8NriTuoO/wNaUtugt29/qqA8zeeM=",
         "owner": "NixOS",
@@ -368,7 +384,7 @@
         "type": "github"
       }
     },
-    "nixpkgs_2": {
+    "nixpkgs_3": {
       "locked": {
         "lastModified": 1654568412,
         "narHash": "sha256-BZkGyX62PyB8fzFHOcjGBJTWGb+PQ28lEbZEUR2x9JM=",
@@ -379,22 +395,6 @@
       },
       "original": {
         "owner": "nixos",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
-    "nixpkgs_3": {
-      "locked": {
-        "lastModified": 1675940568,
-        "narHash": "sha256-epG6pOT9V0kS+FUqd7R6/CWkgnZx2DMT5Veqo+y6G3c=",
-        "owner": "nixos",
-        "repo": "nixpkgs",
-        "rev": "6ccc4a59c3f1b56d039d93da52696633e641bc71",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nixos",
-        "ref": "nixpkgs-unstable",
         "repo": "nixpkgs",
         "type": "github"
       }
@@ -460,10 +460,7 @@
     },
     "root": {
       "inputs": {
-        "nixpkgs": [
-          "std",
-          "nixpkgs"
-        ],
+        "nixpkgs": "nixpkgs",
         "std": "std"
       }
     },
@@ -492,7 +489,9 @@
           "blank"
         ],
         "nixago": "nixago",
-        "nixpkgs": "nixpkgs_3",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
         "paisano": "paisano",
         "paisano-tui": "paisano-tui",
         "terranix": [

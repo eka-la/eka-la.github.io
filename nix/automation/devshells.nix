@@ -8,11 +8,10 @@ in {
     name = "eka.la";
     imports = [std.devshellProfiles.default];
     commands = [
-      {package = cell.packages.astro;}
-      {package = pkgs.nodejs_latest;}
+      {package = pkgs.nodejs_20;}
       {package = pkgs.nodePackages_latest.node2nix;}
       {package = pkgs.nodePackages_latest.svgo;}
-      {package = pkgs.nodePackages_latest.yarn;}
+      {package = pkgs.nodePackages_latest.pnpm;}
       {package = pkgs.pngcrush;}
       {package = pkgs.libwebp;}
       {package = pkgs.netlify-cli;}
