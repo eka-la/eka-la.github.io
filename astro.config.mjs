@@ -8,7 +8,11 @@ export default defineConfig({
     starlight({
       title: "My Docs",
       social: {
-        github: "https://github.com/withastro/starlight",
+        github: "https://github.com/eka-la/eka-la.github.io",
+      },
+      editLink: {
+        baseUrl:
+          "https://github.com/eka-la/eka-la.github.io/edit/main/src/content/docs/",
       },
       sidebar: [
         {
