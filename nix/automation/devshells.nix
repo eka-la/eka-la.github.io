@@ -4,9 +4,10 @@
 }: let
   inherit (inputs.nixpkgs) pkgs;
   inherit (inputs.std) std;
+  inherit (inputs.std.lib) dev;
 in {
-  default = std.lib.mkShell {
-    name = "nrd.sh";
+  default = dev.mkShell {
+    name = "eka.la";
     imports = [std.devshellProfiles.default];
     commands = [
       {package = cell.packages.astro;}
