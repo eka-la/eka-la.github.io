@@ -2,6 +2,8 @@ import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 import markdoc from "@astrojs/markdoc";
 
+import react from "@astrojs/react";
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://eka-la.github.io",
@@ -64,5 +66,6 @@ export default defineConfig({
       ],
     }),
     markdoc(),
+    react(),
   ],
 });
