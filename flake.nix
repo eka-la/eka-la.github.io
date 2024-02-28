@@ -1,5 +1,5 @@
 {
-  inputs.std.url = "github:divnix/std";
+  inputs.std.url = "github:divnix/std/v0.33.0";
   inputs.nixpkgs.url = "github:nixos/nixpkgs/release-23.11";
   inputs.std.inputs.nixpkgs.follows = "nixpkgs";
   inputs.std.inputs.devshell.url = "github:numtide/devshell";
